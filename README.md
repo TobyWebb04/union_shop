@@ -1,4 +1,4 @@
-# Union Shop - Flutter Coursework
+# Union Shop — Flutter Coursework
 
 This repository contains the coursework project for students enrolled in the **Programming Applications and Programming Languages (M30235)** and **User Experience Design and Implementation (M32605)** modules at the University of Portsmouth.
 
@@ -22,9 +22,9 @@ You have three options for your development environment:
 2. **University Windows computers** (via AppsAnywhere)
 3. **Personal computer** (Windows or macOS)
 
-#### Quick Setup Guide
+Below is a quick guide for each option. For more information, you can refer to [Worksheet 0 — Introduction to Dart, Git and GitHub](https://manighahrmani.github.io/sandwich_shop/worksheet-0.html) and [Worksheet 1 — Introduction to Flutter](https://manighahrmani.github.io/sandwich_shop/worksheet-1.html).
 
-**Firebase Studio (Recommended for Quick Start):**
+**Firebase Studio:**
 
 - Access [idx.google.com](https://idx.google.com) with a personal Google account
 - Create a new workspace (template selection not needed for this coursework)
@@ -67,34 +67,22 @@ This command checks your environment and displays a report of the status of your
 
 **For detailed step-by-step instructions**, refer to [Worksheet 1 — Introduction to Flutter](https://manighahrmani.github.io/sandwich_shop/worksheet-1.html), which covers the complete setup process for all three options.
 
-### Step 1: Fork the Repository
+### Fork the Repository
 
-**IMPORTANT: Your fork MUST be public for assessment purposes.**
-
-1. Navigate to the original repository: [https://github.com/manighahrmani/union_shop](https://github.com/manighahrmani/union_shop)
+1. Head to this link: [https://github.com/manighahrmani/union_shop](https://github.com/manighahrmani/union_shop)
 2. Click the "Fork" button in the top-right corner of the page
-3. Ensure the repository is set to **Public**
-4. Click "Create fork"
-5. Make a note of your forked repository URL (e.g., `https://github.com/YOUR-USERNAME/union_shop` where `YOUR-USERNAME` is your GitHub username)
+3. Do not change any of the settings and click "Create fork" (if you already have a repository with the same name, you may need to rename it first)
+4. Make a note of your forked repository URL (e.g., `https://github.com/YOUR-USERNAME/union_shop` where `YOUR-USERNAME` is your GitHub username)
 
 ![Fork Button](https://raw.githubusercontent.com/manighahrmani/sandwich_shop/refs/heads/main/images/screenshot_fork_button.png)
 
 ![Fork Settings](https://raw.githubusercontent.com/manighahrmani/sandwich_shop/refs/heads/main/images/screenshot_fork_settings.png)
 
-### Step 2: Clone Your Forked Repository
+### Clone Your Forked Repository
 
-Open your terminal or command prompt and run:
+If you are using Firebase Studio, head to [https://idx.google.com](https://idx.google.com), click on Import Repo and paste the URL of your forked repository. Name your workspace as `union_shop`.
 
-#### On Windows (PowerShell/Command Prompt)
-
-```bash
-git clone https://github.com/YOUR-USERNAME/union_shop.git
-cd union_shop
-```
-
-Replace `YOUR-USERNAME` with your actual GitHub username.
-
-#### On macOS (Terminal)
+Otherwise, open a terminal, change to your desired directory, and run the following commands:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/union_shop.git
@@ -102,8 +90,6 @@ cd union_shop
 ```
 
 Replace `YOUR-USERNAME` with your actual GitHub username.
-
-**Note:** Replace `YOUR-USERNAME` with your actual GitHub username.
 
 ### Step 3: Install Dependencies
 
