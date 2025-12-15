@@ -368,4 +368,20 @@ class ProductCard extends StatelessWidget {
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('About Us'),
+      ),
+      body: const Padding(
+        padding: EdgeInsets.all(16),
+        child: Text(
+          'This is the Union Shop. We sell lots of different student merchandise.',
+          style: TextStyle(fontSize: 16),
+        ),
+      ),
+    );
+  }
 }
