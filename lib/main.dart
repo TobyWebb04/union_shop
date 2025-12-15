@@ -382,9 +382,18 @@ class AboutPage extends StatelessWidget {
       ),
       body: const Padding(
         padding: EdgeInsets.all(16),
-        child: Text(
-          'This is the Union Shop. We sell lots of different student merchandise.',
-          style: TextStyle(fontSize: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'About Union Shop',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 12),
+            Text('Official student union shop.'),
+            SizedBox(height: 8),
+            Text('All profits go back to students.'),
+          ],
         ),
       ),
     );
