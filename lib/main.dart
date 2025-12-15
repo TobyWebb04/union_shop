@@ -365,3 +365,7 @@ class ProductCard extends StatelessWidget {
     );
   }
 }
+
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+}
