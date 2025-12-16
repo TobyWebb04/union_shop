@@ -475,3 +475,45 @@ class CollectionsPage extends StatelessWidget {
     );
   }
 }
+
+//Collections Details Page
+class CollectionDetailPage extends StatelessWidget {
+  const CollectionDetailPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Clothing'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: GridView.count(
+          crossAxisCount: MediaQuery.of(context).size.width > 600 ? 2 : 1,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
+          children: const [
+            ProductCard(
+              title: 'Union Hoodie',
+              price: '£20.00',
+              imageUrl:
+                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+            ),
+            ProductCard(
+              title: 'Union T-Shirt',
+              price: '£10.00',
+              imageUrl:
+                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+            ),
+            ProductCard(
+              title: 'Union Coat',
+              price: '£35.00',
+              imageUrl:
+                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
