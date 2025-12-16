@@ -270,25 +270,25 @@ class HomeScreen extends StatelessWidget {
                           title: 'T-shirt',
                           price: '£10.00',
                           imageUrl:
-                              'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                              'https://images.unsplash.com/photo-1618354691373-d851c5c3a990',
                         ),
                         ProductCard(
                           title: 'Hoodie',
                           price: '£20.00',
                           imageUrl:
-                              'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                              'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
                         ),
                         ProductCard(
                           title: 'Mug',
                           price: '£10.00',
                           imageUrl:
-                              'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                              'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
                         ),
                         ProductCard(
                           title: 'Bottle',
                           price: '£15.00',
                           imageUrl:
-                              'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                              'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800',
                         ),
                       ],
                     ),
@@ -500,19 +500,19 @@ class CollectionDetailPage extends StatelessWidget {
               title: 'Union Hoodie',
               price: '£20.00',
               imageUrl:
-                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                  'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
               title: 'Union T-Shirt',
               price: '£10.00',
               imageUrl:
-                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                  'https://images.unsplash.com/photo-1618354691373-d851c5c3a990',
             ),
             ProductCard(
               title: 'Union Coat',
               price: '£35.00',
               imageUrl:
-                  'https://shop.upsu.net/cdn/shop/files/PortsmouthCityMagnet1_1024x1024@2x.jpg?v=1752230282',
+                  'https://images.unsplash.com/photo-1548883354-94bcfe321cbb',
             ),
           ],
         ),
