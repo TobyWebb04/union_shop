@@ -29,7 +29,7 @@ class ProductPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     color: const Color(0xFF4d2963),
                     child: const Text(
-                      'PLACEHOLDER HEADER TEXT',
+                      'University of Portsmouth Student Shop',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
@@ -230,7 +230,7 @@ class ProductPage extends StatelessWidget {
               color: Colors.grey[50],
               padding: const EdgeInsets.all(24),
               child: const Text(
-                'Placeholder Footer',
+                'Official student union shop for the University of Portsmouth',
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 16,
