@@ -296,15 +296,39 @@ class HomeScreen extends StatelessWidget {
             // Footer
             Container(
               width: double.infinity,
-              color: Colors.grey[50],
+              color: Colors.grey[100],
               padding: const EdgeInsets.all(24),
-              child: const Text(
-                'Union Shop for University of Portsmouth',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Union Shop',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 12),
+                  Text(
+                    'Official student union shop for the University of Portsmouth.',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  SizedBox(height: 24),
+
+                  // Links
+                  Text(
+                    'Quick Links',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(height: 8),
+                  Text('About Us'),
+                  Text('Collections'),
+                  Text('Contact'),
+                  Text('Returns'),
+
+                  SizedBox(height: 24),
+                  Text(
+                    '© 2025 Union Shop',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
               ),
             ),
           ],
