@@ -235,6 +235,26 @@ class ProductPage extends StatelessWidget {
                     ],
                     onChanged: (value) {},
                   ),
+
+                  const SizedBox(height: 16),
+
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: placeholderCallbackForButtons,
+                        icon: const Icon(Icons.remove),
+                      ),
+                      const Text(
+                        '1',
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.w600),
+                      ),
+                      IconButton(
+                        onPressed: placeholderCallbackForButtons,
+                        icon: const Icon(Icons.add),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
