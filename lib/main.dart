@@ -396,6 +396,7 @@ class ProductCard extends StatelessWidget {
   }
 }
 
+//About Page
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
@@ -425,6 +426,7 @@ class AboutPage extends StatelessWidget {
   }
 }
 
+//Collection Page
 class CollectionsPage extends StatelessWidget {
   const CollectionsPage({super.key});
 
