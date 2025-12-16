@@ -436,12 +436,28 @@ class CollectionsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Collections'),
       ),
-      body: const Center(
-        child: Text(
-          'Collections Page',
-          style: TextStyle(fontSize: 20),
+      body: ListView(padding: const EdgeInsets.all(16), children: const [
+        ListTile(
+          title: Text('Clothing'),
+          subtitle: Text('T-shirts, Hoodies, and more'),
+          trailing: Icon(Icons.arrow_forward_ios),
         ),
-      ),
+        ListTile(
+          title: Text('Accessories'),
+          subtitle: Text('Mugs, Bottles, and more'),
+          trailing: Icon(Icons.arrow_forward_ios),
+        ),
+        ListTile(
+          title: Text('Stationery'),
+          subtitle: Text('Notebooks, Pens, and more'),
+          trailing: Icon(Icons.arrow_forward_ios),
+        ),
+        ListTile(
+          title: Text('Sale Items'),
+          subtitle: Text('Discounted products'),
+          trailing: Icon(Icons.arrow_forward_ios),
+        ),
+      ]),
     );
   }
 }
