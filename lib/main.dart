@@ -438,26 +438,38 @@ class CollectionsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Collections'),
       ),
-      body: ListView(padding: const EdgeInsets.all(16), children: const [
-        ListTile(
-          title: Text('Clothing'),
-          subtitle: Text('T-shirts, Hoodies, and more'),
-          trailing: Icon(Icons.arrow_forward_ios),
+      body: ListView(padding: const EdgeInsets.all(16), children: [
+        GestureDetector(
+          onTap: () {},
+          child: const ListTile(
+            title: Text('Clothing'),
+            subtitle: Text('Hoodies, t-shirts and more'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
         ),
-        ListTile(
-          title: Text('Accessories'),
-          subtitle: Text('Mugs, Bottles, and more'),
-          trailing: Icon(Icons.arrow_forward_ios),
+        GestureDetector(
+          onTap: () {},
+          child: const ListTile(
+            title: Text('Accessories'),
+            subtitle: Text('Mugs, bottles and gifts'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
         ),
-        ListTile(
-          title: Text('Stationery'),
-          subtitle: Text('Notebooks, Pens, and more'),
-          trailing: Icon(Icons.arrow_forward_ios),
+        GestureDetector(
+          onTap: () {},
+          child: const ListTile(
+            title: Text('Stationery'),
+            subtitle: Text('Notebooks, pens and supplies'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
         ),
-        ListTile(
-          title: Text('Sale Items'),
-          subtitle: Text('Discounted products'),
-          trailing: Icon(Icons.arrow_forward_ios),
+        GestureDetector(
+          onTap: () {},
+          child: const ListTile(
+            title: Text('Sale'),
+            subtitle: Text('Discounted items'),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
         ),
       ]),
     );
