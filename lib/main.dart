@@ -25,6 +25,7 @@ class UnionShopApp extends StatelessWidget {
         '/product': (context) => const ProductPage(),
         '/about': (context) => const AboutPage(),
         '/collections': (context) => const CollectionsPage(),
+        '/collection': (context) => const CollectionDetailPage(),
       },
     );
   }
@@ -440,7 +441,9 @@ class CollectionsPage extends StatelessWidget {
       ),
       body: ListView(padding: const EdgeInsets.all(16), children: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/collection');
+          },
           child: const ListTile(
             title: Text('Clothing'),
             subtitle: Text('Hoodies, t-shirts and more'),
