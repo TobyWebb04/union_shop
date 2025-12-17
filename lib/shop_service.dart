@@ -7,7 +7,7 @@ class ShopService {
       title: 'Hoodie',
       price: 20.00,
       imageUrl: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
-      description: 'Comfortable hoodie with Union branding.',
+      description: 'Comfortable hoodie with pockets.',
       sizes: ['S', 'M', 'L'],
     ),
     Product(
@@ -20,10 +20,10 @@ class ShopService {
     ),
     Product(
       id: 'coat',
-      title: 'Union Coat',
+      title: 'Coat',
       price: 35.00,
       imageUrl: 'https://images.unsplash.com/photo-1548883354-94bcfe321cbb',
-      description: 'Warm waterproof coat suitable for all seasons.',
+      description: 'Warm waterproof coat suitable for all weather.',
       sizes: ['S', 'M', 'L'],
     ),
     Product(
@@ -37,11 +37,11 @@ class ShopService {
     ),
     Product(
       id: 'mug',
-      title: 'Union Mug',
+      title: 'Mug',
       price: 10.00,
       imageUrl:
           'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
-      description: 'Ceramic mug featuring Union branding.',
+      description: 'Ceramic mug with a flowery pattern.',
       sizes: ['Standard'],
     ),
   ];
