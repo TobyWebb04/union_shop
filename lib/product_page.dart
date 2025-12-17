@@ -19,6 +19,7 @@ class _ProductPageState extends State<ProductPage> {
   @override
   Widget build(BuildContext context) {
     final productId = ModalRoute.of(context)!.settings.arguments as String;
+    final Product product = ShopService.getById(productId);
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -137,9 +138,9 @@ class _ProductPageState extends State<ProductPage> {
                   const SizedBox(height: 24),
 
                   // Product name
-                  const Text(
-                    'Placeholder Product Name',
-                    style: TextStyle(
+                  Text(
+                    product.title,
+                    style: const TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -149,9 +150,9 @@ class _ProductPageState extends State<ProductPage> {
                   const SizedBox(height: 12),
 
                   // Product price
-                  const Text(
-                    '£15.00',
-                    style: TextStyle(
+                  Text(
+                    '£${product.price.toStringAsFixed(2)}',
+                    style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Colors.purple,
@@ -161,9 +162,9 @@ class _ProductPageState extends State<ProductPage> {
                   const SizedBox(height: 24),
 
                   // Product description
-                  const Text(
-                    'Description',
-                    style: TextStyle(
+                  Text(
+                    product.description,
+                    style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       color: Colors.black,
@@ -171,7 +172,7 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'This is a placeholder description for the product. Students should replace this with real product information and implement proper data management.',
+                    '',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey,
