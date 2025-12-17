@@ -129,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                                     minHeight: 32,
                                   ),
                                   onPressed: () {
-                                    Navigator.pushNamed(context, '/about');
+                                    Navigator.pushNamed(context, '/login');
                                   },
                                 ),
                                 IconButton(
