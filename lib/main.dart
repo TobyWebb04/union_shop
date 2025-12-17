@@ -432,7 +432,8 @@ class AboutPage extends StatelessWidget {
             SizedBox(height: 12),
             Text('Official student union shop.'),
             SizedBox(height: 8),
-            Text('All profits go back to students.'),
+            Text(
+                'This is where you can get the best deals on clothing for the university. We sell high end products and all money we make goes back into the students!'),
           ],
         ),
       ),
