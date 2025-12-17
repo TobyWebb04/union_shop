@@ -145,18 +145,37 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                   onPressed: placeholderCallbackForButtons,
                                 ),
-                                IconButton(
+                                PopupMenuButton<String>(
                                   icon: const Icon(
                                     Icons.menu,
                                     size: 18,
                                     color: Colors.grey,
                                   ),
-                                  padding: const EdgeInsets.all(8),
-                                  constraints: const BoxConstraints(
-                                    minWidth: 32,
-                                    minHeight: 32,
-                                  ),
-                                  onPressed: placeholderCallbackForButtons,
+                                  onSelected: (value) {
+                                    Navigator.pushNamed(context, value);
+                                  },
+                                  itemBuilder: (context) => const [
+                                    PopupMenuItem(
+                                      value: '/',
+                                      child: Text('Home'),
+                                    ),
+                                    PopupMenuItem(
+                                      value: '/collections',
+                                      child: Text('Collections'),
+                                    ),
+                                    PopupMenuItem(
+                                      value: '/sale',
+                                      child: Text('Sale'),
+                                    ),
+                                    PopupMenuItem(
+                                      value: '/about',
+                                      child: Text('About Us'),
+                                    ),
+                                    PopupMenuItem(
+                                      value: '/login',
+                                      child: Text('Login'),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
