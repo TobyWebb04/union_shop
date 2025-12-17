@@ -288,24 +288,28 @@ class HomeScreen extends StatelessWidget {
                       mainAxisSpacing: 48,
                       children: const [
                         ProductCard(
+                          id: 'tshirt',
                           title: 'T-shirt',
                           price: '£10.00',
                           imageUrl:
                               'https://images.unsplash.com/photo-1618354691373-d851c5c3a990',
                         ),
                         ProductCard(
+                          id: 'hoodie',
                           title: 'Hoodie',
                           price: '£20.00',
                           imageUrl:
                               'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
                         ),
                         ProductCard(
+                          id: 'mug',
                           title: 'Mug',
                           price: '£10.00',
                           imageUrl:
                               'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
                         ),
                         ProductCard(
+                          id: 'bottle',
                           title: 'Bottle',
                           price: '£15.00',
                           imageUrl:
@@ -532,18 +536,21 @@ class CollectionDetailPage extends StatelessWidget {
           mainAxisSpacing: 16,
           children: const [
             ProductCard(
+              id: 'hoodie',
               title: 'Hoodie',
               price: '£20.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
+              id: 'tshirt',
               title: 'T-Shirt',
               price: '£10.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1618354691373-d851c5c3a990',
             ),
             ProductCard(
+              id: 'coat',
               title: 'Coat',
               price: '£35.00',
               imageUrl:
@@ -574,12 +581,14 @@ class SalePage extends StatelessWidget {
           mainAxisSpacing: 16,
           children: const [
             ProductCard(
+              id: 'hoodie',
               title: 'Hoodie (Limited time SALE!)',
               price: '£20 --> 15.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
+              id: 'mug',
               title: 'Mug (Limited time SALE!)',
               price: '£10 --> 7.50',
               imageUrl:
