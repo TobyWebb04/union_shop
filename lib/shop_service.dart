@@ -19,6 +19,14 @@ class ShopService {
       sizes: ['S', 'M', 'L'],
     ),
     Product(
+      id: 'coat',
+      title: 'Union Coat',
+      price: 35.00,
+      imageUrl: 'https://images.unsplash.com/photo-1548883354-94bcfe321cbb',
+      description: 'Warm waterproof coat suitable for all seasons.',
+      sizes: ['S', 'M', 'L'],
+    ),
+    Product(
       id: 'bottle',
       title: 'Water Bottle',
       price: 15.00,
@@ -26,6 +34,15 @@ class ShopService {
           'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800',
       description: 'Reusable bottle for everyday use.',
       sizes: ['500ml', '750ml'],
+    ),
+    Product(
+      id: 'mug',
+      title: 'Union Mug',
+      price: 10.00,
+      imageUrl:
+          'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
+      description: 'Ceramic mug featuring Union branding.',
+      sizes: ['Standard'],
     ),
   ];
 
