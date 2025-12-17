@@ -329,7 +329,7 @@ class HomeScreen extends StatelessWidget {
 
                   SizedBox(height: 24),
                   Text(
-                    '© 2025 Union Shop',
+                    '2025 Union Shop',
                     style: TextStyle(color: Colors.grey),
                   ),
                 ],
@@ -497,22 +497,57 @@ class CollectionDetailPage extends StatelessWidget {
           mainAxisSpacing: 16,
           children: const [
             ProductCard(
-              title: 'Union Hoodie',
+              title: 'Hoodie',
               price: '£20.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
-              title: 'Union T-Shirt',
+              title: 'T-Shirt',
               price: '£10.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1618354691373-d851c5c3a990',
             ),
             ProductCard(
-              title: 'Union Coat',
+              title: 'Coat',
               price: '£35.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1548883354-94bcfe321cbb',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class SalePage extends StatelessWidget {
+  const SalePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Sale'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: GridView.count(
+          crossAxisCount: MediaQuery.of(context).size.width > 600 ? 2 : 1,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
+          children: const [
+            ProductCard(
+              title: 'Hoodie (Sale)',
+              price: '£15.00',
+              imageUrl:
+                  'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
+            ),
+            ProductCard(
+              title: 'Mug (Sale)',
+              price: '£7.50',
+              imageUrl:
+                  'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
             ),
           ],
         ),
