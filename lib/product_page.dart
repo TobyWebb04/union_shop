@@ -10,6 +10,7 @@ class ProductPage extends StatefulWidget {
 }
 
 class _ProductPageState extends State<ProductPage> {
+  String? selectedOption;
   void navigateToHome(BuildContext context) {
     Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
   }
@@ -20,6 +21,7 @@ class _ProductPageState extends State<ProductPage> {
   Widget build(BuildContext context) {
     final productId = ModalRoute.of(context)!.settings.arguments as String;
     final Product product = ShopService.getById(productId);
+    selectedOption ??= product.sizes.isNotEmpty ? product.sizes.first : null;
 
     return Scaffold(
       body: SingleChildScrollView(
