@@ -185,16 +185,21 @@ class _ProductPageState extends State<ProductPage> {
 
                   DropdownButtonFormField<String>(
                     decoration: const InputDecoration(
-                      labelText: 'Select size',
+                      labelText: 'Select option',
                       border: OutlineInputBorder(),
                     ),
-                    initialValue: 'M',
-                    items: const [
-                      DropdownMenuItem(value: 'S', child: Text('Small')),
-                      DropdownMenuItem(value: 'M', child: Text('Medium')),
-                      DropdownMenuItem(value: 'L', child: Text('Large')),
-                    ],
-                    onChanged: (value) {},
+                    initialValue: selectedOption,
+                    items: product.sizes
+                        .map((s) => DropdownMenuItem(
+                              value: s,
+                              child: Text(s),
+                            ))
+                        .toList(),
+                    onChanged: (value) {
+                      setState(() {
+                        selectedOption = value;
+                      });
+                    },
                   ),
 
                   const SizedBox(height: 16),
