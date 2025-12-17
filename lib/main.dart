@@ -541,14 +541,14 @@ class SalePage extends StatelessWidget {
           mainAxisSpacing: 16,
           children: const [
             ProductCard(
-              title: 'Hoodie (Sale)',
-              price: '£ƻθ --> 15.00',
+              title: 'Hoodie (Limited time SALE!)',
+              price: '£20 --> 15.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
-              title: 'Mug (Sale)',
-              price: '£𝟣̶𝟢̶ --> 7.50',
+              title: 'Mug (Limited time SALE!)',
+              price: '£10 --> 7.50',
               imageUrl:
                   'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
             ),
