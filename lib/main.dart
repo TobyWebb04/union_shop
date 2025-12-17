@@ -542,13 +542,13 @@ class SalePage extends StatelessWidget {
           children: const [
             ProductCard(
               title: 'Hoodie (Sale)',
-              price: '£15.00',
+              price: '£ƻθ --> 15.00',
               imageUrl:
                   'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
             ),
             ProductCard(
               title: 'Mug (Sale)',
-              price: '£7.50',
+              price: '£𝟣̶𝟢̶ --> 7.50',
               imageUrl:
                   'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
             ),
