@@ -11,6 +11,7 @@ class ProductPage extends StatefulWidget {
 
 class _ProductPageState extends State<ProductPage> {
   String? selectedOption;
+  int quantity = 1;
   void navigateToHome(BuildContext context) {
     Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
   }
@@ -207,16 +208,28 @@ class _ProductPageState extends State<ProductPage> {
                   Row(
                     children: [
                       IconButton(
-                        onPressed: placeholderCallbackForButtons,
+                        onPressed: () {
+                          setState(() {
+                            if (quantity > 1) {
+                              quantity--;
+                            }
+                          });
+                        },
                         icon: const Icon(Icons.remove),
                       ),
-                      const Text(
-                        '1',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w600),
+                      Text(
+                        quantity.toString(),
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                       IconButton(
-                        onPressed: placeholderCallbackForButtons,
+                        onPressed: () {
+                          setState(() {
+                            quantity++;
+                          });
+                        },
                         icon: const Icon(Icons.add),
                       ),
                     ],
