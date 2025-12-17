@@ -304,33 +304,42 @@ class HomeScreen extends StatelessWidget {
               width: double.infinity,
               color: Colors.grey[100],
               padding: const EdgeInsets.all(24),
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Union Shop',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 12),
-                  Text(
+                  const SizedBox(height: 12),
+                  const Text(
                     'Official student union shop for the University of Portsmouth.',
                     style: TextStyle(color: Colors.grey),
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
 
                   // Links
-                  Text(
+                  const Text(
                     'Quick Links',
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
-                  SizedBox(height: 8),
-                  Text('About Us'),
-                  Text('Collections'),
-                  Text('Contact'),
-                  Text('Returns'),
+                  const SizedBox(height: 8),
 
-                  SizedBox(height: 24),
-                  Text(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/about');
+                    },
+                    child: const Text(
+                      'About Us',
+                      style: TextStyle(color: Colors.blue),
+                    ),
+                  ),
+                  const Text('Collections'),
+                  const Text('Contact'),
+                  const Text('Returns'),
+
+                  const SizedBox(height: 24),
+                  const Text(
                     '2025 Union Shop',
                     style: TextStyle(color: Colors.grey),
                   ),
